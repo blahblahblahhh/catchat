@@ -1,0 +1,135 @@
+/**
+ * Fix user-agent
+ */
+
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+/**
+ *    our canvas
+ */
+
+
+.message {
+  width: 200px;
+  margin: 15px;
+}
+
+#message {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.message .btn {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.kitten {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.chat {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*
+    login screen
+*/
+
+.page {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.login.page {
+  background-color: #000;
+}
+
+.login.page .form {
+  height: 100px;
+  margin-top: -100px;
+  position: absolute;
+
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.usernameInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 400px;
+}
+
+.login.page .title {
+  font-size: 200%;
+}
+
+.login.page .usernameInput {
+  font-size: 200%;
+  letter-spacing: 3px;
+}
+
+.login.page .title, .login.page .usernameInput {
+  color: #fff;
+  font-weight: 100;
+}
+
+.btn {
+  background: #000;
+  border-color: transparent;
+  border-radius: 0px;
+  border-width: 2px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: all 1s ease;
+  margin: 10px 0px;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ddd;
+}
+
+#new {
+  width: 400px;
+}
+
+.wrong {
+  background-color: red;
+}
+
+.correct {
+  background-color: green;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "catboard",
+  "version": "1.0.0",
+  "description": "collaborative chatboard with cats using socket.io",
+  "main": "index.js",
+  "keywords": [
+    "socket.io",
+    "whiteboard"
+  ],
+  "dependencies": {
+    "express": "4.9.x",
+    "socket.io": "latest"
+  },
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "Sophie Adams",
+  "license": "MIT"
+}
