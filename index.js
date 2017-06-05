@@ -75,15 +75,14 @@ function onConnection(socket) {
   var lastPosition = {
     x: socket.x,
     y: socket.y,
-    username: '',
-    id: '',
+    username: socket.username,
+    id: socket.id,
   };
 
   // updating kitten location
   socket.on('receive_position', function(data) {
     socket.x = data.x;
     socket.y = data.y;
-    username = data.username;
     lastPosition = data;
     for (var i in users) {
       if (users[i].id === data.id) {
