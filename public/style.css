@@ -59,6 +59,7 @@ html, body {
 
 .login.page {
   background-color: #000;
+  z-index: 10000;
 }
 
 .login.page .form {
