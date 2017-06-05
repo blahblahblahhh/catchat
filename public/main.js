@@ -39,6 +39,8 @@ $(document).ready(function() {
   });
 
   $("#new_user").on('keyup', function(e) {
+    var username = $('#new_user').val().replace(/\s+/g, '');
+    
     $('.usernameInput').css({
       'border-bottom': '2px solid #fff'
     });
