@@ -108,9 +108,6 @@ $(document).ready(function() {
       left: x + "px",
       top: y + "px"
     });
-    $("#" + data.id).draggable({
-      disabled: true
-    });
   });
 
   // add chat message
