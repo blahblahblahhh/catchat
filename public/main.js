@@ -82,7 +82,7 @@ $(document).ready(function() {
         // make all users draggable
         $('#' + data[i].id).draggable({
           drag: function(event, ui) {
-            ui.helper.context.draggable = false;
+            console.log(ui.helper.context.draggable = false);
             var coord = $(this).position();
             var id = $(this).attr('id');
             var user = $(this).attr('data-id');
@@ -108,10 +108,9 @@ $(document).ready(function() {
       left: x + "px",
       top: y + "px"
     });
-    $('#' + data.id).draggable({
-      drag: function(event, ui) {
-        ui.helper.context.draggable = true;
-      }});
+    $("#" + data.id).draggable({
+      disabled: true
+    });
   });
 
   // add chat message
