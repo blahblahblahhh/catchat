@@ -44,12 +44,12 @@ $(document).ready(function() {
     });
     if (e.keyCode == 13) {
       if ($('#new_user').val()) {
-        $('.login').hide();
         socket.emit('new_user', {
           username: username,
           x: 0,
           y: 0
         });
+        $('.login').hide();
         $('.chat').removeClass('hidden');
       } else {
         $('.usernameInput').css({

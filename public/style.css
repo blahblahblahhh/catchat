@@ -13,12 +13,6 @@ html, body {
   padding: 0;
 }
 
-
-/**
- *    our canvas
- */
-
-
 .message {
   width: 200px;
   margin: 15px;
@@ -132,4 +126,13 @@ html, body {
 
 .correct {
   background-color: green;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .message, .usernameInput, #new {
+    width: 200px;
+  }
+  .kitten {
+    max-width: 200px;
+  }
 }

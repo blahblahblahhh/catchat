@@ -22,7 +22,7 @@
     simulatedEvent.initMouseEvent(type, true, true, window, 1, first.screenX, first.screenY, first.clientX, first.clientY, false, false, false, false, 0, null);
 
     first.target.dispatchEvent(simulatedEvent);
-    e.preventDefault();
+    // e.preventDefault();
   }
 
   function init() {
